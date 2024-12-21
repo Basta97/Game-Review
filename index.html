@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Strike</title>
+    <link rel="icon" href="./img/icon.png" />
+    <!-- style bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- free style -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav id="nav-bar" class="w-75 m-auto shadow p-2 d-flex">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="logo fs-3">Game Review</h1>
+
+        <ul class="m-0 d-flex list-unstyled gap-4 p-2">
+          <li><a id="mmorpg" class="active" href="#">MMORPG</a></li>
+          <li><a id="shooter" href="#">SHOOTER</a></li>
+          <li><a id="sailing" href="#">SAILING</a></li>
+          <li><a id="permadeath" href="#">PERMADEATH</a></li>
+          <li><a id="superhero" href="#">SUPERHERO</a></li>
+          <li><a id="pixel" href="#">PIXEL</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="section-game" class="container my-5 d-flex">
+      <div id="show-game" class="row g-4"></div>
+    </div>
+    <div
+      id="pop-gd"
+      class="container-fluid position-absolute top-0 bottom-0 end-0 start-0 p-5  d-none"
+    >
+      <div
+        class="bg-primary d-flex w-100 justify-content-between align-items-center"
+      >
+        <h1>Details Game</h1>
+        <div id="exit">
+            <i  class="fa-solid fa-x "></i>
+        </div>
+            
+      </div>
+      <div class="d-flex mt-4 p-3  container">
+        <div class="">
+            <img id="image-det"  src="" alt="image" />
+        </div>
+    
+        <div class=" w-50  p-4">
+          <h2>Title: <span  id="gd-title"></span></h2>
+          <p>Category: <span class="fr-btn" id="game-cat"></span></p>
+          <p>Platform: <span class="fr-btn" id="game-plat"></span></p>
+          <p>Status: <span class="fr-btn" id="game-stat"></span></p>
+          <p id="game-detail">
+
+          </p>
+          <a class="btn btn-outline-primary" id="game-url" target="_blank">Show Game</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+    <!-- bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
